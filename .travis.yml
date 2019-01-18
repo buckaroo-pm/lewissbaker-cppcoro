@@ -8,7 +8,6 @@ addons:
       - ubuntu-toolchain-r-test
       - llvm-toolchain-trusty
     packages:
-      - clang-7
       - clang-8
       - lld-8
   homebrew:
@@ -19,6 +18,9 @@ addons:
 
 os:
   - linux
+
+compiler:
+  - clang
 
 env:
   - BUCKAROO_VERSION=buckaroo-redux-alpha-11
