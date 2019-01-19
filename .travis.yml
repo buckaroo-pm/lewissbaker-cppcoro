@@ -32,5 +32,5 @@ before_install:
 
 script:
   - ./buckaroo-client install
-  - buck build -c ui.superconsole=DISABLED cxx.cxxpp=`$CXX` cxx.cxx=`$CXX` //:cppcoro
-  - buck run -c ui.superconsole=DISABLED cxx.cxxpp=`$CXX` cxx.cxx=`$CXX` //test:test
+  - buck build -c ui.superconsole=DISABLED cxx.cxxpp=$CXX cxx.cxx=$CXX //:cppcoro
+  - buck run -c ui.superconsole=DISABLED cxx.cxxpp=$CXX cxx.cxx=$CXX //test:test
